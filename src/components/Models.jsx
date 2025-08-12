@@ -8,9 +8,9 @@ export default function Models() {
       <h2 className='text-white text-2xl font-bold mb-5'>Models</h2>
       <div className='w-full h-full grid grid-cols-3 gap-10'>
         {data.map((car) => (
-          <div key={car.id} className="flex flex-col gap-5 w-full h-full bg-gray-700 p-4"  onClick={() => navigate(`/car/${car.id}`)}>
+          <div key={car.id} className="flex flex-col gap-5 w-full h-full bg-gray-700 p-4"  onClick={() => navigate(`/${car.model}/${car.id}`)}>
 
-            <img src={car.img} alt={car.model} className="w-auto h-auto rounded-lg" />
+            <img src={car.img} alt={car.model} className="w-[100%] h-auto rounded-lg" />
             <div className='flex flex-row'>
             <h3 className='text-3xl mr-auto'>{car.make} {car.model} </h3>
             <h2 className='font-bold text-4xl mr-2'>{car.price}</h2>

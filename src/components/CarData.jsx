@@ -11,7 +11,7 @@ export default function CarData() {
         <p onClick={() => navigate(-1)} className='cursor-pointer mb-5'>Back</p>
       <h2 className='text-white text-2xl font-bold mb-5'>Car Data</h2>
       <div className='w-full h-full flex flex-col items-center justify-center gap-5'>
-        <img src={car.img} alt={car.model} className="w-auto h-auto rounded-lg" />
+        <img src={car.img} alt={car.model} className="w-[50%] h-[50%] rounded-lg" />
         <h2 className='font-bold text-4xl'>{car.make} {car.model} </h2>
         <h3 className='text-2xl font-bold'>{car.price}</h3>
 
