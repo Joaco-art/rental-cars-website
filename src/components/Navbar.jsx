@@ -2,7 +2,7 @@ import { Link } from 'react-scroll'
 
 export default function Navbar() {
   return (
-    <header className="w-full h-24 bg-gray-900 shadow-md fixed top-0 left-0 z-30">
+    <header className="w-full h-20 fixed top-0 left-0 z-30 bg-black opacity-80 backdrop-blur-lg">
       <nav className="flex w-full h-full items-center px-8">
         {/* Logo */}
         

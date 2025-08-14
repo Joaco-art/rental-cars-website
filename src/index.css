@@ -1,11 +1,19 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: hsl(249, 96%, 11%);
+  background-image:
+  linear-gradient(-45deg, #000000 25%, transparent 75%),
+  linear-gradient(45deg, #000000 25%, transparent 75%),
+  linear-gradient(-135deg, transparent 75%, #150861 75%),
+  linear-gradient(135deg, transparent 75%, #000000 75%);
+background-size: 4rem 4rem;
+background-position: 1rem 1rem, 1rem 2rem, 0 0, 0 0;
+
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

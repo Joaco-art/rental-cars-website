@@ -7,9 +7,8 @@ export default function CarData() {
     const navigate = useNavigate()
 
   return (
-    <section className="w-full h-full bg-gray-800 p-4 gap-5">
-        <p onClick={() => navigate(-1)} className='cursor-pointer mb-5'>Back</p>
-      <h2 className='text-white text-2xl font-bold mb-5'>Car Data</h2>
+    <section className="w-full h-full p-4 gap-5">
+        <p onClick={() => navigate(`/models`)} className='cursor-pointer mt-20'>Come Back</p>
       <div className='w-full h-full flex flex-col items-center justify-center gap-5'>
         <img src={car.img} alt={car.model} className="w-[50%] h-[50%] rounded-lg" />
         <h2 className='font-bold text-4xl'>{car.make} {car.model} </h2>
@@ -63,7 +62,7 @@ export default function CarData() {
                     
                 </div>
             
-            <button className='bg-blue-500 text-white font-bold rounded-lg px-10 py-2 w-auto h-auto hover:bg-blue-600 duration-300 transition-all'>Rent</button>
+            <button onClick={() => navigate(`/rent${car.model}/${car.id}`)} className='bg-blue-500 text-white font-bold rounded-lg px-10 py-2 w-auto h-auto hover:bg-blue-600 duration-300 transition-all'>Rent</button>
             
         </div>
         

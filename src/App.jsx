@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Models from './components/Models'
 import CartData from './components/CarData'
 import Hero from './components/Hero'
+import SetRenting from './components/SetRenting'
 import About from './components/About'
 import './App.css'
 
@@ -20,6 +21,7 @@ function App() {
 
               <Element name="hero-section">
                 <Hero />
+
               </Element>
               
               <Element name="models-section">
@@ -33,11 +35,9 @@ function App() {
           }
         />
         
-        {/* Ruta individual de modelos */}
         <Route path="/models" element={<Models />} />
-
-        {/* Detalles de un coche */}
         <Route path="/:model/:id" element={<CartData />} />
+        <Route path='/rent:model/:id' element={<SetRenting />} />
       </Routes>
     </Router>
   )

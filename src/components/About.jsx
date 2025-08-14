@@ -2,7 +2,7 @@
 
 export default function About() {
   return (
-    <section className="w-full h-screen bg-gray-800 p-4 gap-5">      
+    <section className="w-full h-screen p-4 gap-5">      
       <h2 className='text-white text-2xl font-bold mb-5'>About Us</h2>
       <div className='w-full h-full flex flex-col items-center justify-center gap-5'>
         <p className='text-white text-2xl font-bold mb-5'>We are a premium car rental service offering the best models at competitive prices.</p>
