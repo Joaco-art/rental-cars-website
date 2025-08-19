@@ -1,15 +1,20 @@
 import { Link } from 'react-scroll'
+import { useNavigate } from 'react-router-dom'
+
 
 export default function Navbar() {
+
+  const navigate = useNavigate()
+
   return (
-    <header className="w-full h-20 fixed top-0 left-0 z-30 bg-black opacity-80 backdrop-blur-lg">
+    <header className="w-full h-20 fixed top-0 left-0 z-30 bg-transparent">
       <nav className="flex w-full h-full items-center px-8">
         {/* Logo */}
         
-        <Link to='hero-section' smooth={true} duration={500} offset={-64} className="text-white text-2xl font-bold mr-auto cursor-pointer hover:text-yellow-400 transition-colors">Rental Cars</Link>
+        <Link to='hero-section' onClick={() => navigate(`/`)} smooth={true} duration={500} offset={-64} className="text-white text-2xl font-bold mr-auto cursor-pointer hover:text-yellow-400 transition-colors">Rental Cars</Link>
 
         {/* Links */}
-        <ul className="flex items-center gap-8 text-white">
+        <ul className="flex items-center gap-8 text-white font-semibold">
           <li>
             <Link
               to="models-section"

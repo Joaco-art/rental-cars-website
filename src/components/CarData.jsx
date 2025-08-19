@@ -7,14 +7,14 @@ export default function CarData() {
     const navigate = useNavigate()
 
   return (
-    <section className="w-full h-full p-4 gap-5">
-        <p onClick={() => navigate(`/models`)} className='cursor-pointer mt-20'>Come Back</p>
+    <section className="w-full h-screen p-4 gap-5">
+        <p onClick={() => navigate(`/models`)} className='cursor-pointer mt-30 font-semibold'>Come Back</p>
       <div className='w-full h-full flex flex-col items-center justify-center gap-5'>
-        <img src={car.img} alt={car.model} className="w-[50%] h-[50%] rounded-lg" />
+        <img src={car.img} alt={car.model} className="w-[40%] h-[50%] rounded-lg" />
         <h2 className='font-bold text-4xl'>{car.make} {car.model} </h2>
         <h3 className='text-2xl font-bold'>{car.price}</h3>
 
-        <div className='w-full h-full bg-gray-700 p-4 flex flex-col gap-10 justify-center items-center'>
+        <div className='w-full h-full bg-gray-900 p-4 flex flex-col gap-10 justify-center items-center'>
             <h4 className='text-3xl font-bold'>Characteristics</h4>
 
                 <div className='flex flex-row justify-center items-center gap-20'>

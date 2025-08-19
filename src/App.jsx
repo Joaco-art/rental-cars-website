@@ -36,6 +36,7 @@ function App() {
         />
         
         <Route path="/models" element={<Models />} />
+        
         <Route path="/:model/:id" element={<CartData />} />
         <Route path='/rent:model/:id' element={<SetRenting />} />
       </Routes>

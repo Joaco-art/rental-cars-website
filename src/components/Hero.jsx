@@ -4,10 +4,10 @@ export default function Hero() {
   return (
     <section className="relative h-screen w-screen">
 
-      <div className="flex flex-col items-center justify-center w-full h-full p-5">
-        <h1 className="xl:text-[150px] md:text-[100px] text-[70px] text-center uppercase text-white font-bold cursor-pointer">Rental Cars</h1>
+      <div className="flex flex-col items-center justify-center w-full h-full p-5 gap-10">
+        <h1 className="xl:text-[150px] md:text-[100px] text-[70px] text-center uppercase text-white font-bold cursor-pointer">Vintage Rental Cars</h1>
         <h2 className="text-2xl uppercase font-bold text-blue-500 cursor-pointer">Made for everyone</h2>
-        
+        <h3 className="max-w-[50ch] text-pretty">The best cars for you with the best prices for every budget.</h3>
       </div>
 
       
@@ -26,7 +26,6 @@ export default function Hero() {
 
       
 
-      <h3 className="absolute top-50 right-5 max-w-[30ch] text-pretty">The best cars for you with the best prices for every budget.</h3>
 
         
     
